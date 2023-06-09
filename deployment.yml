@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+   name: newdeployment
+spec: 
+  selector:
+    matchLabels: 
+      type: gameservice
+  replicas: 2
+  template:
+    metadata:
+      labels:
+         type: gameservice
+    spec:
+         containers:
+           - name: gamenew
+             image: mathusuvi/gamenew
+             ports: 
+               - containerPort: 80
