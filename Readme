@@ -1,9 +1,9 @@
 Hosting the 2048 game on kubernetes.
 The Dockerfile provided in this repo is used to install all the dependencies needed for the game to be hosted on k8s.
-The game app is containerized an is easily portable.
+The 2048 game app is containerized and is easily portable.
 To get the game running follow the steps below:
-    Build the dockerfile to get an image
-    Push the image to Dockerhub
-    Create a deployment yaml file and implement it.
-    Your k8s cluster is now hosting the game. 
+    >Build the dockerfile to get an image
+    >Push the image to Dockerhub
+    >Create a deployment yaml file and implement it.
+    >Your k8s cluster is now hosting the game. 
 You can verify it by giving the node ip: port number.
